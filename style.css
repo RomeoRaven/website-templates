@@ -1,10 +1,12 @@
+/*
 //////////////////////
 // Layout
 /////////////////////
+*/
 body {
   display: grid;
   height: 100vh;
-  grid-template: auto 1fr auto / auto 1fr auto
+  grid-template: auto 1fr auto / auto 1fr auto;
 }
 
 header {
@@ -17,39 +19,41 @@ header {
 }
 
 main {
-  background: coral;
   grid-column: 2 / 3;
 }
 
 .right-sidebar {
-  background: yellow;
   grid-column: 3 / 4;
 }
 
 footer {
-  background: wheat;
   padding: 2rem;
   text-align: center;
   grid-column: 1 / 4;
 }
 
+/* 
+///////////////
+// Scratch
+//////////////
+*/
+header, .left-sidebar, .right-sidebar, footer {border: 1px solid #888;}
+
+/*
 //////////////////////////////
 // Styling - All media types
 //////////////////////////////
+*/
 body {
   font-family: system-ui, sans-serif;
 }
 header {
-    background: lightpink;
    }
  .left-sidebar {  
-  background: lightblue;
   padding: 1rem;
  }
 .right-sidebar {
-  background: yellow;
   padding: 1rem;
 }
 footer {
-  background: wheat;
 }
